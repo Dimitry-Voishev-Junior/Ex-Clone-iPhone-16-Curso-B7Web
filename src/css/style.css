@@ -1,0 +1,239 @@
+@font-face {
+    font-family: SF-Pro;
+    src: url(../fonts/SF-Pro.ttf);
+}
+
+@font-face {
+    font-family: SF-Pro-Bold;
+    src: url(../fonts/SF-Pro-Text-Bold.otf);
+}
+
+:root {
+    --sf-pro: SF-Pro;
+    --sf-bold: SF-Pro-Bold;
+    --white: #FFFFFF
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--sf-pro)
+}
+
+main {
+    min-height: 100vh;
+    padding-bottom: 420px;
+    background-image: linear-gradient(rgb(12, 18, 71), rgb(40, 51, 125) 28%, rgb(80, 93, 173) 46%, rgb(125, 142, 209) 60%, rgb(174, 188, 230) 75%, rgb(239, 236, 255) 90%, rgb(255, 255, 255));
+}
+
+section {
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-container {
+    width: 80%;
+    max-height: 44px;
+    color: var(--white);
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 14px;
+}
+
+nav ul li a {
+    display: flex;
+    color: #ffffffad;
+    text-decoration: none;
+}
+
+.header-container img {
+    width: 20px;
+    height: 20px;
+    filter: opacity(70%);
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.main-tittle {
+    color: var(--white);
+    font-size: 28px;
+    position: absolute;
+    margin-bottom: 120px;
+    font-family: var(--sf-bold);
+}
+
+.main-image {
+    position: absolute;
+    margin-top: 400px;
+}
+
+.lupa,
+.sacola {
+    filter: invert(100%);
+}
+
+.lupa img,
+.sacola img {
+    width: 15px;
+    height: 15px;
+}
+
+.main-button {
+    position: absolute;
+    margin-top: 790px;
+}
+
+.main-button a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: #0076DF;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.main-text {
+    padding: 20px;
+    position: absolute;
+    margin-top: 950px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.main-text-tittle {
+    font-family: var(--sf-bold);
+    padding-bottom: 5px;
+}
+
+.main-text-desc {
+    color: #585858;
+}
+
+#apple-intelligence {
+    margin-top: 200px;
+}
+
+.apple-intelligence-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Intelligence-bg {
+    background: linear-gradient(180deg, rgb(245, 245, 247) 81%, rgb(255, 255, 255));
+    padding-top: 200px;
+}
+
+.apple-intelligence-caption {
+    font-size: 64px;
+    color: #1D1D1F;
+    font-family: var(--sf-bold);
+    text-align: center;
+}
+
+.apple-intelligence-desc {
+    padding-top: 40px;
+    color: #8F8F93;
+    text-align: center;
+}
+
+.iphone-hand {
+    display: flex;
+    justify-content: center;
+    padding-left: 120px;
+}
+
+.iphone-hand img {
+    height: 1000px;
+}
+
+@media (max-width: 950px){
+    .main-image img {
+        width: 700px;
+    }
+}
+
+@media (max-width: 890px){
+    .apple-intelligence-tittle img {
+        width: 400px;
+    }
+
+    .apple-intelligence-caption {
+        font-size: 40px;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .iphone-hand img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .iphone-hand {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 690px){
+    .main-image img {
+        width: 500px;
+    }
+
+    .main-welcome-image img {
+        width: 500px;
+    }
+
+    .main-image {
+        margin-top: 300px;
+    }
+
+    .main-welcome-image {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 540px){
+    .main-image img {
+        width: 400px;
+    }
+
+    .iphone-hand {
+        padding-left: 50px;
+    }
+}
