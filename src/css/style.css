@@ -24,7 +24,7 @@
 
 main {
     min-height: 100vh;
-    padding-bottom: 420px;
+    padding-bottom: 20px;
     background-image: linear-gradient(rgb(12, 18, 71), rgb(40, 51, 125) 28%, rgb(80, 93, 173) 46%, rgb(125, 142, 209) 60%, rgb(174, 188, 230) 75%, rgb(239, 236, 255) 90%, rgb(255, 255, 255));
 }
 
@@ -74,7 +74,8 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    height: 100vh;
+    padding-bottom: 300px;
 }
 
 .main-tittle {
@@ -115,7 +116,6 @@ nav ul li a {
 }
 
 .main-text {
-    padding: 20px;
     position: absolute;
     margin-top: 950px;
     text-align: center;
@@ -130,6 +130,7 @@ nav ul li a {
 .main-text-desc {
     color: #585858;
 }
+
 
 #apple-intelligence {
     margin-top: 200px;
@@ -149,11 +150,12 @@ nav ul li a {
 }
 
 .apple-intelligence-caption {
-    font-size: 64px;
+    font-size: 5vw;
     color: #1D1D1F;
     font-family: var(--sf-bold);
     text-align: center;
 }
+
 
 .apple-intelligence-desc {
     padding-top: 40px;
@@ -164,30 +166,17 @@ nav ul li a {
 .iphone-hand {
     display: flex;
     justify-content: center;
-    padding-left: 120px;
+    padding-top: 80px;
 }
 
 .iphone-hand img {
     height: 1000px;
 }
 
-@media (max-width: 950px){
-    .main-image img {
-        width: 700px;
-    }
-}
-
-@media (max-width: 890px){
-    .apple-intelligence-tittle img {
-        width: 400px;
-    }
-
-    .apple-intelligence-caption {
-        font-size: 40px;
-    }
-
-    .header-container {
-        width: 100%;
+@media (max-width: 950px) {
+    .main-image img, .main-welcome-image img, .iphone-hand img, .apple-intelligence-tittle img{
+        height: auto;
+        max-width: 100%;
     }
 
     nav ul {
@@ -199,41 +188,18 @@ nav ul li a {
         font-size: 12px;
         margin: 5px;
     }
-
-    .iphone-hand img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .iphone-hand {
-        padding-left: 80px;
-    }
 }
 
-@media (max-width: 690px){
-    .main-image img {
-        width: 500px;
-    }
-
-    .main-welcome-image img {
-        width: 500px;
-    }
-
+@media (max-width: 740px) {
     .main-image {
         margin-top: 300px;
     }
 
-    .main-welcome-image {
-        margin-top: 0px;
-    }
-}
-
-@media (max-width: 540px){
-    .main-image img {
-        width: 400px;
+    .main-button {
+        margin-top: 600px;
     }
 
-    .iphone-hand {
-        padding-left: 50px;
+    .main-text {
+        margin-top: 800px;
     }
 }
